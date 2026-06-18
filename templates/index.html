@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitForge Gym</title>
+
+ 
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+ 
+
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">FITFORGE</div>
+
+ 
+<ul class="nav-links">
+    <li><a href="#features">Why Us</a></li>
+    <li><a href="#plans">Plans</a></li>
+    <li><a href="#bmi">BMI</a></li>
+    <li><a href="#join">Join</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+ 
+
+</nav>
+
+<section class="hero">
+
+ 
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+    <span class="hero-badge">
+        🔥 PREMIUM FITNESS EXPERIENCE
+    </span>
+
+    <h1>
+        TRANSFORM YOUR BODY.<br>
+        UNLOCK YOUR POTENTIAL.
+    </h1>
+
+    <p>
+        Elite coaching, world-class equipment, personalized nutrition,
+        and a community that pushes you to become your best self.
+    </p>
+
+    <div class="hero-buttons">
+
+        <a href="#join" class="btn-primary">
+            Join Membership
+        </a>
+
+        <a href="#plans" class="btn-secondary">
+            View Plans
+        </a>
+
+    </div>
+
+</div>
+ 
+
+</section>
+
+<section class="stats">
+
+ 
+<div class="stat-card">
+    <h2>500+</h2>
+    <p>Active Members</p>
+</div>
+
+<div class="stat-card">
+    <h2>20+</h2>
+    <p>Certified Trainers</p>
+</div>
+
+<div class="stat-card">
+    <h2>10+</h2>
+    <p>Years Experience</p>
+</div>
+
+<div class="stat-card">
+    <h2>98%</h2>
+    <p>Success Rate</p>
+</div>
+ 
+
+</section>
+
+<section id="features" class="features">
+
+ 
+<h2>Why Choose FitForge?</h2>
+
+<div class="feature-grid">
+
+    <div class="feature-card">
+        <h3>🏋 Premium Equipment</h3>
+        <p>Train with modern machines and professional-grade equipment.</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>🥗 Nutrition Guidance</h3>
+        <p>Customized plans for weight loss, strength, and muscle gain.</p>
+    </div>
+
+    <div class="feature-card">
+        <h3>💪 Expert Coaches</h3>
+        <p>Experienced trainers dedicated to helping you reach your goals.</p>
+    </div>
+
+</div>
+ 
+
+</section>
+
+<section id="plans" class="plans">
+
+ 
+<h2>Membership Plans</h2>
+
+<div class="plan-container">
+
+    <div class="plan-card">
+        <h3>Basic</h3>
+        <h4>₹999/month</h4>
+
+        <p>Gym Access</p>
+        <p>Locker Facility</p>
+        <p>Fitness Assessment</p>
+    </div>
+
+    <div class="plan-card featured">
+
+        <div class="popular-tag">
+            MOST POPULAR
+        </div>
+
+        <h3>Premium</h3>
+        <h4>₹1999/month</h4>
+
+        <p>Personal Trainer</p>
+        <p>Diet Guidance</p>
+        <p>All Facilities</p>
+        <p>Monthly Review</p>
+
+    </div>
+
+    <div class="plan-card">
+        <h3>Elite</h3>
+        <h4>₹2999/month</h4>
+
+        <p>1-on-1 Coaching</p>
+        <p>Custom Nutrition</p>
+        <p>VIP Support</p>
+        <p>Priority Scheduling</p>
+    </div>
+
+</div>
+ 
+
+</section>
+
+<section id="join" class="form-section">
+
+ 
+<h2>Join FitForge</h2>
+
+<form action="/join" method="POST">
+
+    <input type="text" name="name" placeholder="Full Name" required>
+
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <input type="text" name="phone" placeholder="Phone Number" required>
+
+    <select name="plan">
+        <option>Basic</option>
+        <option>Premium</option>
+        <option>Elite</option>
+    </select>
+
+    <button type="submit">
+        Join Membership
+    </button>
+
+</form>
+ 
+
+</section>
+
+<section class="form-section">
+
+ 
+<h2>Book Free Trial</h2>
+
+<form action="/trial" method="POST">
+
+    <input type="text" name="name" placeholder="Full Name" required>
+
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <input type="date" name="date" required>
+
+    <button type="submit">
+        Book Trial
+    </button>
+
+</form>
+ 
+
+</section>
+
+<section id="contact" class="form-section">
+
+ 
+<h2>Contact Us</h2>
+
+<form action="/contact" method="POST">
+
+    <input type="text" name="name" placeholder="Full Name" required>
+
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <textarea
+        name="message"
+        placeholder="Tell us how we can help you"
+        rows="5"
+        required></textarea>
+
+    <button type="submit">
+        Contact Us
+    </button>
+
+</form>
+ 
+
+</section>
+
+<section id="bmi" class="bmi-section">
+
+ 
+<h2>BMI Calculator</h2>
+
+<input type="number" id="height" placeholder="Height (cm)">
+
+<input type="number" id="weight" placeholder="Weight (kg)">
+
+<button onclick="calculateBMI()">
+    Calculate BMI
+</button>
+
+<h3 id="result"></h3>
+ 
+
+</section>
+
+<footer class="footer">
+
+ 
+<h3>FITFORGE GYM</h3>
+
+<p>
+    Train Hard. Stay Consistent. Become Stronger.
+</p>
+ 
+
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

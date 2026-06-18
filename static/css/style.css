@@ -1,0 +1,468 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0b0b;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+
+ 
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 8%;
+
+background:rgba(0,0,0,.7);
+backdrop-filter:blur(10px);
+ 
+
+}
+
+.logo{
+font-size:32px;
+font-weight:800;
+color:#ff7a00;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.nav-links a:hover
+
+/* HERO */
+
+.hero{
+height:100vh;
+
+ 
+background:
+linear-gradient(
+rgba(0,0,0,.75),
+rgba(0,0,0,.75)),
+url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+padding:0 20px;
+ 
+
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero-badge{
+display:inline-block;
+
+ 
+padding:10px 18px;
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:50px;
+
+background:rgba(255,255,255,.05);
+
+margin-bottom:25px;
+ 
+
+}
+
+.hero h1{
+font-size:72px;
+line-height:1.15;
+margin-bottom:25px;
+}
+
+.hero p{
+color:#d0d0d0;
+font-size:20px;
+line-height:1.8;
+margin-bottom:35px;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn-primary,
+.btn-secondary{
+text-decoration:none;
+padding:15px 30px;
+border-radius:10px;
+transition:.3s;
+}
+
+.btn-primary{
+background:#ff7a00;
+color:white;
+}
+
+.btn-primary:hover{
+transform:translateY(-4px);
+box-shadow:0 10px 25px rgba(255,122,0,.35);
+}
+
+.btn-secondary{
+border:1px solid white;
+color:white;
+}
+
+.btn-secondary:hover{
+background:white;
+color:black;
+}
+
+/* STATS */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+ 
+gap:25px;
+
+padding:90px 8%;
+ 
+
+}
+
+.stat-card{
+background:#171717;
+
+ 
+padding:35px;
+
+border-radius:18px;
+
+text-align:center;
+
+transition:.3s;
+ 
+
+}
+
+.stat-card:hover{
+transform:translateY(-8px);
+}
+
+.stat-card h2{
+color:#ff7a00;
+font-size:40px;
+margin-bottom:10px;
+}
+
+/* FEATURES */
+
+.features{
+padding:100px 8%;
+text-align:center;
+}
+
+.features h2{
+font-size:42px;
+margin-bottom:50px;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.feature-card{
+background:#171717;
+
+ 
+padding:40px;
+
+border-radius:18px;
+
+transition:.3s;
+ 
+
+}
+
+.feature-card:hover{
+transform:translateY(-8px);
+border:1px solid #ff7a00;
+}
+
+/* PLANS */
+
+.plans{
+padding:100px 8%;
+text-align:center;
+}
+
+.plans h2{
+font-size:42px;
+margin-bottom:50px;
+}
+
+.plan-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.plan-card{
+background:#171717;
+
+ 
+padding:40px;
+
+border-radius:18px;
+
+transition:.3s;
+
+position:relative;
+ 
+
+}
+
+.plan-card:hover{
+transform:translateY(-10px);
+}
+
+.plan-card h4{
+color:#ff7a00;
+margin:20px 0;
+font-size:30px;
+}
+
+.plan-card p{
+margin:12px 0;
+}
+
+.featured{
+border:2px solid #ff7a00;
+}
+
+.popular-tag{
+position:absolute;
+top:-14px;
+right:20px;
+
+ 
+background:#ff7a00;
+
+padding:6px 14px;
+
+border-radius:30px;
+
+font-size:12px;
+font-weight:700;
+ 
+
+}
+
+/* FORMS */
+
+.form-section{
+padding:100px 8%;
+text-align:center;
+}
+
+.form-section h2{
+margin-bottom:35px;
+font-size:40px;
+}
+
+.form-section form{
+max-width:650px;
+
+ 
+margin:auto;
+
+display:flex;
+flex-direction:column;
+
+gap:18px;
+
+background:#171717;
+
+padding:35px;
+
+border-radius:20px;
+ 
+
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea{
+padding:16px;
+
+ 
+border:none;
+
+border-radius:12px;
+
+background:#242424;
+
+color:white;
+ 
+
+}
+
+.form-section textarea{
+resize:none;
+}
+
+.form-section button{
+padding:16px;
+
+ 
+border:none;
+
+border-radius:12px;
+
+background:#ff7a00;
+
+color:white;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:.3s;
+ 
+
+}
+
+.form-section button:hover{
+transform:translateY(-4px);
+}
+
+/* BMI */
+
+.bmi-section{
+padding:100px 8%;
+text-align:center;
+}
+
+.bmi-section h2{
+margin-bottom:30px;
+font-size:42px;
+}
+
+.bmi-section input{
+width:240px;
+
+ 
+padding:16px;
+
+margin:10px;
+
+border:none;
+
+border-radius:10px;
+
+background:#171717;
+
+color:white;
+ 
+
+}
+
+.bmi-section button{
+padding:16px 25px;
+
+ 
+background:#ff7a00;
+
+border:none;
+
+border-radius:10px;
+
+color:white;
+
+cursor:pointer;
+ 
+
+}
+
+#result{
+margin-top:20px;
+color:#ff7a00;
+}
+
+/* FOOTER */
+
+.footer{
+padding:60px 20px;
+
+ 
+text-align:center;
+
+background:#111;
+ 
+
+}
+
+.footer h3{
+color:#ff7a00;
+margin-bottom:10px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+ 
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+ 
+
+}

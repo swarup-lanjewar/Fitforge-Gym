@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitForge Gym</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style_new.css') }}">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">FITFORGE</div>
+    <ul class="nav-links">
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#bmi">BMI</a></li>
+        <li><a href="#join">Join</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Build Strength. Build Confidence.</h1>
+        <p>Premium training, nutrition guidance, and coaching.</p>
+        <a href="#join" class="btn-primary">Join Now</a>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="stat-card"><h2>500+</h2><p>Members</p></div>
+    <div class="stat-card"><h2>20+</h2><p>Trainers</p></div>
+    <div class="stat-card"><h2>10+</h2><p>Years</p></div>
+</section>
+
+<section id="plans" class="plans">
+<h2>Membership Plans</h2>
+<div class="plan-container">
+<div class="plan-card"><h3>Basic</h3><h4>₹999</h4></div>
+<div class="plan-card featured"><h3>Premium</h3><h4>₹1999</h4></div>
+<div class="plan-card"><h3>Elite</h3><h4>₹2999</h4></div>
+</div>
+</section>
+
+<section id="join" class="form-section">
+<h2>Join Membership</h2>
+<form action="/join" method="POST">
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Email Address" required>
+<input type="text" name="phone" placeholder="Phone Number" required>
+<select name="plan"><option>Basic</option><option>Premium</option><option>Elite</option></select>
+<button type="submit">Join Membership</button>
+</form>
+</section>
+
+<section id="contact" class="form-section">
+<h2>Contact Us</h2>
+<form action="/contact" method="POST">
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Email Address" required>
+<textarea name="message" placeholder="Tell us how we can help you" rows="5"></textarea>
+<button type="submit">Contact Me</button>
+</form>
+</section>
+
+<section class="form-section">
+<h2>Book Free Trial</h2>
+<form action="/trial" method="POST">
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Email Address" required>
+<input type="date" name="date" required>
+<button type="submit">Book Trial</button>
+</form>
+</section>
+
+<section id="bmi" class="bmi-section">
+<h2>BMI Calculator</h2>
+<input type="number" id="height" placeholder="Height (cm)">
+<input type="number" id="weight" placeholder="Weight (kg)">
+<button onclick="calculateBMI()">Calculate</button>
+<h3 id="result"></h3>
+</section>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

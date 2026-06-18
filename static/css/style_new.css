@@ -1,0 +1,17 @@
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,sans-serif}
+body{background:#0b0b0b;color:#fff}
+.navbar{display:flex;justify-content:space-between;padding:20px 8%;background:#111;position:sticky;top:0}
+.logo{color:#ff7a00;font-size:28px;font-weight:700}
+.nav-links{display:flex;gap:20px;list-style:none}
+.nav-links a{color:white;text-decoration:none}
+.hero{height:90vh;display:flex;justify-content:center;align-items:center;text-align:center;background:linear-gradient(135deg,#111,#1e1e1e)}
+.hero h1{font-size:64px}
+.btn-primary,button{background:#ff7a00;color:#fff;border:none;padding:14px 24px;border-radius:10px;cursor:pointer}
+.stats,.plan-container{display:flex;gap:25px;justify-content:center;flex-wrap:wrap;padding:60px 20px}
+.stat-card,.plan-card,.form-section form{background:#181818;border-radius:16px}
+.stat-card,.plan-card{padding:30px;min-width:220px}
+.featured{border:2px solid #ff7a00}
+.plans,.form-section,.bmi-section{text-align:center;padding:80px 8%}
+.form-section form{max-width:550px;margin:auto;padding:25px;display:flex;flex-direction:column;gap:15px}
+input,select,textarea{padding:14px;border:none;border-radius:10px}
