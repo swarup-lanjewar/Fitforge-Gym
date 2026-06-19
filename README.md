@@ -57,41 +57,38 @@ User → Application Load Balancer → Auto Scaling Group → EC2 (Flask Applica
 
 ### Homepage
 
-![Homepage](project-screenshots/homepage.png)
+![Homepage](project-screenshots/Homepage.png)
 
 ### Admin Dashboard
 
-![Admin Dashboard](project-screenshots/admin-dashboard.png)
+![Admin Dashboard](project-screenshots/Admin-Dashboard.png)
 
-### AWS Infrastructure
-
-![AWS Infrastructure](project-screenshots/aws-infra.png)
 
 ### Database Records
 
-![RDS Data](project-screenshots/rds-data.png)
+![RDS Data](project-screenshots/RDS-Tables.png)
 
 ## AWS Resources
 
 ### EC2 Instance
 
-![EC2](project-screenshots/ec2-instance.png)
+![EC2](project-screenshots/EC2.png)
 
 ### RDS Database
 
-![RDS](project-screenshots/rds-instance.png)
+![RDS](project-screenshots/RDS.png)
 
 ### Application Load Balancer
 
-![ALB](project-screenshots/alb.png)
+![ALB](project-screenshots/ALB.png)
 
 ### Auto Scaling Group
 
-![ASG](project-screenshots/asg.png)
+![ASG](project-screenshots/ASG.png)
 
 ### Target Group Health
 
-![Target Group](project-screenshots/target-group.png)
+![Target Group](project-screenshots/Target-Group(Healthy).png)
 
 ## Skills Demonstrated
 
