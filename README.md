@@ -59,6 +59,7 @@ User → Application Load Balancer → Auto Scaling Group → EC2 (Flask Applica
 
 ![Homepage](project-screenshots/Homepage.png)
 
+
 ### Admin Dashboard
 
 ![Admin Dashboard](project-screenshots/Admin-Dashboard.png)
@@ -68,27 +69,31 @@ User → Application Load Balancer → Auto Scaling Group → EC2 (Flask Applica
 
 ![RDS Data](project-screenshots/RDS-Tables.png)
 
-## AWS Resources
 
 ### EC2 Instance
 
 ![EC2](project-screenshots/EC2.png)
 
+
 ### RDS Database
 
 ![RDS](project-screenshots/RDS.png)
+
 
 ### Application Load Balancer
 
 ![ALB](project-screenshots/ALB.png)
 
+
 ### Auto Scaling Group
 
 ![ASG](project-screenshots/ASG.png)
 
+
 ### Target Group Health
 
 ![Target Group](project-screenshots/Target-Group(Healthy).png)
+
 
 ## Skills Demonstrated
 
