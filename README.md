@@ -17,13 +17,13 @@ Built and deployed a full-stack Gym Management Web Application on AWS to gain ha
 
 ## Tech Stack
 
+* AWS
 * Python
 * Flask
 * MySQL
 * HTML
 * CSS
 * JavaScript
-* AWS
 
 ## Architecture
 
